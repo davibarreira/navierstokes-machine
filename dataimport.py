@@ -1,3 +1,4 @@
+import pandas as pd
 def ImportData(folder):
     file_list = []
     file_list.append(pd.read_table('./Mesh/meshcoord.txt',sep="\s+"))
@@ -42,4 +43,3 @@ def ImportData(folder):
     data= pd.DataFrame(plist)
     
     return data,dataconv
-data,dataconv = ImportData(folder)
